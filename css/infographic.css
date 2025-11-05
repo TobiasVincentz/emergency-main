@@ -9,6 +9,8 @@
 .info-graphic {
   border-radius: 0;
   margin: 60px auto 80px auto;
+  position: relative; /* establishes a positioning context for absolutely-positioned children */
+  text-align: center;
 }
 .info-text h2 {
   line-height: 3rem;
@@ -39,4 +41,30 @@
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
+}
+
+.my_scale {
+  transform: scale(1.5);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+#Layer_8 {
+  display: none;
+}
+
+/* Buttons that sit near the SVG */
+.info-graphic .instructionknap {
+  display: inline-block;
+  margin: 0.6rem 0.4rem 0; /* small gap above, and between buttons */
+  padding: 0.45rem 0.7rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #000;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
