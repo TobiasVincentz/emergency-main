@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -40,7 +40,166 @@
           <h2>Overskrift</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset>
+            <legend><strong>Dit navn</strong></legend>
+            <div class="form-group">
+              <label for="Fornavn">Fornavn</label>
+              <input type="text" id="fornavn" name="navn" required />
+              <p class="error-message">Her skal du indtaste dit fornavn</p>
+            </div>
+
+            <div class="form-group">
+              <label for="last_name">Efternavn</label>
+              <input type="text" id="efternavn" name="navn" required />
+              <p class="error-message">Her skal du indtaste dit efternavn</p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><strong>Kontaktoplysninger</strong></legend>
+            <div class="form-group">
+              <label for="tel">Telephone</label>
+              <input type="tel" id="tel" name="kontaktoplysninger" required />
+              <p class="error-message">
+                Her skal du indtaste dit telefonnummer
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="kontaktoplysninger"
+                required
+              />
+              <p class="error-message">
+                Her skal du indtaste din e-mail adresse
+              </p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <strong>Du har været i kontakt med et monster</strong>
+            </legend>
+            <div class="form-group">
+              <label for="bid">Hvornår?</label>
+              <input type="date" id="bid" name="kontakt_med_monster" required />
+              <p class="error-message">
+                Her skal du oplyse datoen for hvornår du har været i kontakt med
+                et monster
+              </p>
+            </div>
+
+            <div class="check-box">
+              <label for="symptomer">Hvilke symptomer har du haft?</label>
+
+              <label for="symptomer"
+                >Feber
+                <input
+                  type="checkbox"
+                  id="feber"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Hoste
+                <input
+                  type="checkbox"
+                  id="hoste"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Hovedpine
+                <input
+                  type="checkbox"
+                  id="hovedpine"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Forkølelse
+                <input
+                  type="checkbox"
+                  id="forkoelelse"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Træthed
+                <input
+                  type="checkbox"
+                  id="traethed"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Koncentrationsbesvær
+                <input
+                  type="checkbox"
+                  id="koncentrationsbesvaer"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Kløe
+                <input
+                  type="checkbox"
+                  id="kloee"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Andet
+                <input
+                  type="checkbox"
+                  id="andet"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+
+              <label for="symptomer"
+                >Jeg har ikke haft symptomer
+                <input
+                  type="checkbox"
+                  id="ingen"
+                  name="symptombokse"
+                  value="yes"
+                />
+              </label>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="terms">
+              <input
+                type="checkbox"
+                id="terms"
+                name="accept_terms"
+                value="yes"
+                required
+              />
+              Jeg bekræfter at jeg ikke har haft nogen af ovenstående symptomer
+              inden for de sidste 48 timer
+            </label>
+          </div>
+
+          <button>Skriv dig op til behandling</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
