@@ -37,41 +37,44 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Udfyld en formular</h2>
+          <p>
+            Hvis du har været i kontakt med et monster så udfyld denne formular
+            og tilmeld dig behandling
+          </p>
         </article>
         <form id="webform">
           <fieldset>
             <legend><strong>Dit navn</strong></legend>
             <div class="form-group">
               <label for="Fornavn">Fornavn</label>
-              <input type="text" id="fornavn" name="navn" required />
+              <input type="text" id="fornavn" name="fornavn" required />
               <p class="error-message">Her skal du indtaste dit fornavn</p>
             </div>
 
             <div class="form-group">
               <label for="last_name">Efternavn</label>
-              <input type="text" id="efternavn" name="navn" required />
+              <input type="text" id="efternavn" name="efternavn" required />
               <p class="error-message">Her skal du indtaste dit efternavn</p>
             </div>
           </fieldset>
           <fieldset>
             <legend><strong>Kontaktoplysninger</strong></legend>
             <div class="form-group">
-              <label for="tel">Telephone</label>
-              <input type="tel" id="tel" name="kontaktoplysninger" required />
+              <label for="tel">Telefonnummer</label>
+              <input
+                type="tel"
+                id="telefonnummer"
+                name="telefonnummer"
+                required
+              />
               <p class="error-message">
                 Her skal du indtaste dit telefonnummer
               </p>
             </div>
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="kontaktoplysninger"
-                required
-              />
+              <input type="email" id="email" name="email" required />
               <p class="error-message">
                 Her skal du indtaste din e-mail adresse
               </p>
@@ -83,7 +86,7 @@
             </legend>
             <div class="form-group">
               <label for="bid">Hvornår?</label>
-              <input type="date" id="bid" name="kontakt_med_monster" required />
+              <input type="date" id="bid" name="dato_for_bid" required />
               <p class="error-message">
                 Her skal du oplyse datoen for hvornår du har været i kontakt med
                 et monster
@@ -95,22 +98,12 @@
 
               <label for="symptomer"
                 >Feber
-                <input
-                  type="checkbox"
-                  id="feber"
-                  name="symptombokse"
-                  value="yes"
-                />
+                <input type="checkbox" id="feber" name="feber" value="Ja" />
               </label>
 
               <label for="symptomer"
                 >Hoste
-                <input
-                  type="checkbox"
-                  id="hoste"
-                  name="symptombokse"
-                  value="yes"
-                />
+                <input type="checkbox" id="hoste" name="hoste" value="Ja" />
               </label>
 
               <label for="symptomer"
@@ -118,68 +111,8 @@
                 <input
                   type="checkbox"
                   id="hovedpine"
-                  name="symptombokse"
-                  value="yes"
-                />
-              </label>
-
-              <label for="symptomer"
-                >Forkølelse
-                <input
-                  type="checkbox"
-                  id="forkoelelse"
-                  name="symptombokse"
-                  value="yes"
-                />
-              </label>
-
-              <label for="symptomer"
-                >Træthed
-                <input
-                  type="checkbox"
-                  id="traethed"
-                  name="symptombokse"
-                  value="yes"
-                />
-              </label>
-
-              <label for="symptomer"
-                >Koncentrationsbesvær
-                <input
-                  type="checkbox"
-                  id="koncentrationsbesvaer"
-                  name="symptombokse"
-                  value="yes"
-                />
-              </label>
-
-              <label for="symptomer"
-                >Kløe
-                <input
-                  type="checkbox"
-                  id="kloee"
-                  name="symptombokse"
-                  value="yes"
-                />
-              </label>
-
-              <label for="symptomer"
-                >Andet
-                <input
-                  type="checkbox"
-                  id="andet"
-                  name="symptombokse"
-                  value="yes"
-                />
-              </label>
-
-              <label for="symptomer"
-                >Jeg har ikke haft symptomer
-                <input
-                  type="checkbox"
-                  id="ingen"
-                  name="symptombokse"
-                  value="yes"
+                  name="hovedpine"
+                  value="Ja"
                 />
               </label>
             </div>
@@ -189,8 +122,8 @@
               <input
                 type="checkbox"
                 id="terms"
-                name="accept_terms"
-                value="yes"
+                name="bekraeft"
+                value="Bekræftet"
                 required
               />
               Jeg bekræfter at jeg ikke har haft nogen af ovenstående symptomer
@@ -201,11 +134,23 @@
           <button>Skriv dig op til behandling</button>
         </form>
       </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+      <section class="output">
+        <h2>Opsamling (output)</h2>
+
+        <div>
+          <p>Fornavn: <span id="fornavn_output"></span></p>
+          <p>Efternavn: <span id="efternavn_output"></span></p>
+          <p>Telefonnummer: <span id="telefon_output"></span></p>
+          <p>E-mail: <span id="email_output"></span></p>
+          <p>Hvornår: <span id="dato_for_bid_output"></span></p>
+          <p>Feber: <span id="feber_output"></span></p>
+          <p>Hoste: <span id="hoste_output"></span></p>
+          <p>Hovedpine: <span id="hovedpine_output"></span></p>
+          <p>
+            Ingen symptomer inden for 48 timer:
+            <span id="bekraeft_output"></span>
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -235,6 +180,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/forms.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
