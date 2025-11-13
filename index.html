@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+        <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -43,46 +44,107 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/bruv.jpeg" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+            <summary class="cta_btn">Se mere</summary>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              magnam ducimus ea, sed minima asperiores.
+            </details>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/bro.jpg" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+            <summary class="cta_btn">Se mere</summary>
+                        <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              magnam ducimus ea, sed minima asperiores.
+            </p>            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              magnam ducimus ea, sed minima asperiores.
+            </p>            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              magnam ducimus ea, sed minima asperiores.
+            </p>
+            </details>
           </div>
         </article>
       </section>
       <section id="breaking">
-        <article class="news_card">
+        <article id="newscard1" class="news_card">
+          <h3>Fra bid til sammenbrud</h3>
+          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <img src="img/newspic1.jpeg" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover1">
+            Læs mere
+          </button>
+        </article>
+        <article popover id="news_popover1">
+          <h2>
+            Fra bid til sammenbrud: Genkend de 5 stadier før det er for sent
+          </h2>
+          <h4>Trin 1: Øjeblikkelig Isolation (0–2 timer)</h3>
+          <p>
+            Adskil dig fra andre, så snart du mistænker kontakt. Monstre smitter
+            gennem væsker og nærkontakt. Lås døren, tæt ventiler med tape, og
+            sæt et synligt “KARANTÆNE”-skilt op. Tabt tid her øger risikoen.
+          </p>
+          <h4>Trin 2: Symptomovervågning (2–24 timer)</h3>
+          <p>
+            Typiske tegn optræder i rækkefølge: Feber over 39 °C inden for 4 timer. Lysende iris-glød i
+            svagt lys – tjek med telefonens lommelygte. Lokal lilla misfarvning
+            der spreder sig fra såret. Auditiv hallucination med lavfrekvent
+            brummen. Dokumentér hvert symptom med tidsstemplede fotos; data
+            hjælper triage-hold.
+          </p>
+          <h4></h4>
+        </article>
+        <article id="" class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/newspic2.jpeg" alt="news_img" />
+<button class="cta_btn" popovertarget="news_popover2">Læs mere</button>
+        </article>
+                <article popover id="news_popover2">
+          <h2>
+           ashdiuhasdguaosdipas
+          </h2>
+          <h4>Trin 1: Øjeblikkelig Isolation (0–2 timer)</h3>
+          <p>
+            Adskil dig fra andre, så snart du mistænker kontakt. Monstre smitter
+            gennem væsker og nærkontakt. Lås døren, tæt ventiler med tape, og
+            sæt et synligt “KARANTÆNE”-skilt op. Tabt tid her øger risikoen.
+          </p>
+          <h4>Trin 2: Symptomovervågning (2–24 timer)</h3>
+          <p>
+            Typiske tegn optræder i rækkefølge: Feber over 39 °C inden for 4 timer. Lysende iris-glød i
+            svagt lys – tjek med telefonens lommelygte. Lokal lilla misfarvning
+            der spreder sig fra såret. Auditiv hallucination med lavfrekvent
+            brummen. Dokumentér hvert symptom med tidsstemplede fotos; data
+            hjælper triage-hold.
+          </p>
+          <h4></h4>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/newspic3.jpg" alt="news_img" />
+<button class="cta_btn" popovertarget="news_popover3">Læs mere</button>
         </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+        <article popover id="news_popover3">
+          <h3>FUUUUCK</h3>
         </article>
       </section>
     </main>
