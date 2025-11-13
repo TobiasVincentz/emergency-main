@@ -1,0 +1,22 @@
+article[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.413);
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cta_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+[open] summary::after {
+  content: "\2715";
+  rotate: 0deg;
+}
