@@ -9,6 +9,7 @@ const feberOutput = document.querySelector("#feber_output");
 const hosteOutput = document.querySelector("#hoste_output");
 const hovedpineOutput = document.querySelector("#hovedpine_output");
 const bekraeftOutput = document.querySelector("#bekraeft_output");
+const symptomerOutput = document.querySelector("#symptomer_output");
 
 function cancelPopup(event) {
   event.preventDefault();
@@ -26,9 +27,11 @@ function handleSubmit(event) {
   const telefon = formData.get("telefonnummer");
   const email = formData.get("email");
   const datoforbid = formData.get("dato_for_bid");
-  const feber = formData.get("feber");
-  const hoste = formData.get("hoste");
-  const hovedpine = formData.get("hovedpine");
+
+  const symptomer = formData.getAll("symptom");
+  // const feber = formData.get("feber");
+  // const hoste = formData.get("hoste");
+  // const hovedpine = formData.get("hovedpine");
   const bekraeft = formData.get("bekraeft");
 
   // 2. Vis værdierne i de rigtige output-felter
@@ -37,9 +40,11 @@ function handleSubmit(event) {
   telefonOutput.textContent = telefon;
   emailOutput.textContent = email;
   datoforbidOutput.textContent = datoforbid;
-  feberOutput.textContent = feber;
-  hosteOutput.textContent = hoste;
-  hovedpineOutput.textContent = hovedpine;
+  symptomerOutput.textContent = symptomer.join(", ");
+
+  // feberOutput.textContent = feber;
+  // hosteOutput.textContent = hoste;
+  // hovedpineOutput.textContent = hovedpine;
   bekraeftOutput.textContent = bekraeft;
 
   form.reset();

@@ -66,8 +66,8 @@ form {
 
   .form-group {
     display: grid;
-    gap: 0.6rlh;
     padding: 1px;
+    gap: 8px;
   }
 
   label:has(input) {

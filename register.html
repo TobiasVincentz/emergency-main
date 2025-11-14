@@ -47,13 +47,13 @@
           <fieldset>
             <legend><strong>Dit navn</strong></legend>
             <div class="form-group">
-              <label for="Fornavn">Fornavn</label>
+              <label for="fornavn">Fornavn</label>
               <input type="text" id="fornavn" name="fornavn" required />
               <p class="error-message">Her skal du indtaste dit fornavn</p>
             </div>
 
             <div class="form-group">
-              <label for="last_name">Efternavn</label>
+              <label for="efternavn">Efternavn</label>
               <input type="text" id="efternavn" name="efternavn" required />
               <p class="error-message">Her skal du indtaste dit efternavn</p>
             </div>
@@ -61,7 +61,7 @@
           <fieldset>
             <legend><strong>Kontaktoplysninger</strong></legend>
             <div class="form-group">
-              <label for="tel">Telefonnummer</label>
+              <label for="telefonnummer">Telefonnummer</label>
               <input
                 type="tel"
                 id="telefonnummer"
@@ -96,23 +96,33 @@
             <div class="check-box">
               <label for="symptomer">Hvilke symptomer har du haft?</label>
 
-              <label for="symptomer"
+              <label for="feber"
                 >Feber
-                <input type="checkbox" id="feber" name="feber" value="Ja" />
+                <input
+                  type="checkbox"
+                  id="feber"
+                  name="symptom"
+                  value="Feber"
+                />
               </label>
 
-              <label for="symptomer"
+              <label for="hoste"
                 >Hoste
-                <input type="checkbox" id="hoste" name="hoste" value="Ja" />
+                <input
+                  type="checkbox"
+                  id="hoste"
+                  name="symptom"
+                  value="Hoste"
+                />
               </label>
 
-              <label for="symptomer"
+              <label for="hovedpine"
                 >Hovedpine
                 <input
                   type="checkbox"
                   id="hovedpine"
-                  name="hovedpine"
-                  value="Ja"
+                  name="symptom"
+                  value="Hovedpine"
                 />
               </label>
             </div>
@@ -143,9 +153,8 @@
           <p>Telefonnummer: <span id="telefon_output"></span></p>
           <p>E-mail: <span id="email_output"></span></p>
           <p>Hvornår: <span id="dato_for_bid_output"></span></p>
-          <p>Feber: <span id="feber_output"></span></p>
-          <p>Hoste: <span id="hoste_output"></span></p>
-          <p>Hovedpine: <span id="hovedpine_output"></span></p>
+          <p>Symptomer: <span id="symptomer_output"></span></p>
+
           <p>
             Ingen symptomer inden for 48 timer:
             <span id="bekraeft_output"></span>

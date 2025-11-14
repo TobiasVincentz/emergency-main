@@ -20,3 +20,15 @@ article[popover]::backdrop {
   content: "\2715";
   rotate: 0deg;
 }
+
+/* Animation til accordion */
+
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.5s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}
