@@ -1,9 +1,9 @@
 :root {
   /* Colours */
-  --color-bg: rgb(252, 235, 148); /* page background /*
+  --color-bg: #c1c2d9; /* page background /*
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg: #4f468c;
 
   /* Logotype */
   --color-logotype-bg: #000;
@@ -37,12 +37,12 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #ff4b00;
+  --color-card-bg: #fffdf4;
+  --color-cta-card-bg: #4f468c;
   /* news-cards */
-  --color-news-bg: #fffae2;
+  --color-news-bg: #fffdf4;
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
+  --color-cta-newscard-bg: #4f468c;
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -63,7 +63,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #fff;
-  --color-infobox-1-bg: #fceb94;
-  --color-infobox-2-bg: #def5db;
+  --color-info-bg: #fffdf4;
+  --color-infobox-1-bg: #bf7e84;
+  --color-infobox-2-bg: #d7b2b6;
 }
