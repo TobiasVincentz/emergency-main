@@ -56,14 +56,4 @@
 /* Buttons that sit near the SVG */
 .info-graphic .instructionknap {
   display: inline-block;
-  margin: 0.6rem 0.4rem 0; /* small gap above, and between buttons */
-  padding: 0.45rem 0.7rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: #111;
-  border: 2px solid #000;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }

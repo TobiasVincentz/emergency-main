@@ -94,7 +94,7 @@ nav a {
 #logotype-wrapper {
   background-color: var(--color-logotype-bg);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 3.6rem;
 }
@@ -138,4 +138,12 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+#toggle {
+  z-index: 1;
+}
+
+#forsidelogotype {
+  height: 4rem;
 }

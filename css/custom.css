@@ -1,20 +1,21 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #c1c2d9; /* page background /*
+  --color-bg: light-dark(#c1c2d9, #222); /* page background /*
 
   /* Header */
-  --color-head-bg: #4f468c;
+  --color-head-bg: light-dark(#4f468c, #312f2f);
 
   /* Logotype */
-  --color-logotype-bg: #000;
-  --color-text-logotype: #fffae2;
+  --color-logotype-bg: light-dark(#000, #181818);
+  --color-text-logotype: light-dark(#fffae2, e0d3ff);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(#6784d4, #4d4d4d);
   /* Links */
-  --color-link-bg: #fffae2;
-  --color-link-hover: #a497976b; /* used */
+  --color-link-bg: light-dark(#fffae2, #202020);
+  --color-link-hover: #4f468c; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
@@ -23,12 +24,12 @@
   --font-sub1-size: 48px;
   --font-h2-size: 36px;
   --font-h3-size: 32px;
-  --color-headline-bg: #000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-bg: light-dark(#000, #202020);
+  --color-headline-text-page: light-dark(#f5f5f5, #f5f5f5);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #fffae2;
+  --color-text: light-dark(#000, #f5f5f5);
+  --color-text-inverted: light-dark(#f5f5f5, #f5f5f5);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,12 +38,12 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg: #fffdf4;
-  --color-cta-card-bg: #4f468c;
+  --color-card-bg: light-dark(#f5f5f5, #4d4d4d);
+  --color-cta-card-bg: light-dark(#4f468c, #202020);
   /* news-cards */
-  --color-news-bg: #fffdf4;
+  --color-news-bg: light-dark(#f5f5f5, #4d4d4d);
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #4f468c;
+  --color-cta-newscard-bg: light-dark(#4f468c, #202020);
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -63,7 +64,11 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #fffdf4;
+  --color-info-bg: light-dark(#f5f5f5, #4d4d4d);
   --color-infobox-1-bg: #bf7e84;
   --color-infobox-2-bg: #d7b2b6;
+}
+
+html.dark {
+  color-scheme: dark;
 }
