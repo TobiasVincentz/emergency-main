@@ -20,7 +20,8 @@ header {
 }
 
 #main-disclamer-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   column-gap: 1rem;
 }
 
