@@ -21,7 +21,7 @@
 
   /* Headlines og rubrik */
   --font-h1-size: 48px;
-  --font-sub1-size: 48px;
+  --font-sub1-size: 36px;
   --font-h2-size: 36px;
   --font-h3-size: 32px;
   --color-headline-bg: light-dark(#000, #202020);
@@ -42,9 +42,9 @@
   --color-cta-card-bg: light-dark(#4f468c, #202020);
   /* news-cards */
   --color-news-bg: light-dark(#f5f5f5, #4d4d4d);
-  --color-news-bg-inverted: #dbe2f5;
+  --color-news-bg-inverted: light-dark(#b088c1, #312f2f);
   --color-cta-newscard-bg: light-dark(#4f468c, #202020);
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-cta-newscard-bg-inverted: light-dark(#c1c2d9, #312f2f);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -65,8 +65,8 @@
 
   /* Infographics */
   --color-info-bg: light-dark(#f5f5f5, #4d4d4d);
-  --color-infobox-1-bg: #bf7e84;
-  --color-infobox-2-bg: #d7b2b6;
+  --color-infobox-1-bg: light-dark(#a9a0df, #312f2f);
+  --color-infobox-2-bg: light-dark(#d0caf2, #3f3d3d);
 }
 
 html.dark {
