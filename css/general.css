@@ -51,7 +51,7 @@ h1 {
   grid-column: 1/-1;
   margin-bottom: 20px;
   font-size: var(--font-h2-size);
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 .sub {

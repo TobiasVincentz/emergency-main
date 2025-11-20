@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/forms.css"/>
-        <link rel="stylesheet" href="css/popover.css" />
-        <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/popover.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -21,9 +21,8 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> <img src="logotype.svg" alt="logotype"> </a>
-          <button id="toggle">Toggle</button>
-          
+          <a href="index.html"> <img src="logotype.svg" alt="logotype" /> </a>
+          <button id="toggle">Light/Dark</button>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -40,8 +39,10 @@
       <div id="main-disclamer-content">
         <img id="forsidelogotype" src="logotype.svg" alt="ICON" />
         <div>
-          <h1>Overskrift</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Styrelsen for monsterbid</h1>
+          <p class="sub">
+            Vi tilbyder Danskerne krisehjælp under monsterkrisen
+          </p>
         </div>
       </div>
     </section>
@@ -50,38 +51,59 @@
         <article class="daily_card">
           <img src="img/bruv.jpeg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>De første minutter</h2>
+
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Hvis du har været i direkte kontakt med en zombie, gælder én
+              regel: <strong>Reager med det samme.</strong>
             </p>
             <details>
-            <summary class="cta_btn">Se mere</summary>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              <summary class="cta_btn">Se mere</summary>
+              <p>
+                Kontakt betyder alt fra et bid eller en rift til blot
+                hud-mod-hud berøring, især hvis der er åbne sår. Inden for 10
+                minutter bør du:
+              </p>
+              <ul>
+                <li>
+                  Trække dig væk fra området og undgå alle andre mennesker.
+                </li>
+                <li>
+                  Vaske det inficerede område grundigt med sæbe, desinfektion
+                  eller hvad end du har adgang til. Det stopper ikke
+                  infektionen, men kan forsinke den.
+                </li>
+                <li>
+                  Aktivere det lokale beredskab via radio, mobil eller nærmeste
+                  alarmstation.
+                </li>
+                <li>
+                  Sætte dig i midlertidig karantæne, helst i et aflåseligt rum.
+                </li>
+              </ul>
             </details>
           </div>
         </article>
         <article class="daily_card">
           <img src="img/bro.jpg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Kontakt med et monster</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Et enkelt møde med det inficerede kan koste dig mere, end du tror
+              - her er, hvad du skal vide.
             </p>
             <details>
-            <summary class="cta_btn">Se mere</summary>
-                        <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
+              <summary class="cta_btn">Se mere</summary>
+              <p>
+                At komme i kontakt med en zombie eller en inficeret
+                monsterlignende skabning er en af de mest alvorlige risici under
+                den igangværende monster-apokalypse. Selv kortvarig fysisk
+                berøring kan være nok til at overføre den aggressive infektion,
+                der forvandler mennesker til aggressive, desorienterede og
+                ukontrollerbare individer. Derfor er det afgørende at vide
+                præcis, hvad du skal gøre, hvis du har mistanke om smitte - og
+                hvilke symptomer du skal være opmærksom på.
+              </p>
             </details>
           </div>
         </article>
@@ -89,70 +111,138 @@
       <section id="breaking">
         <article id="newscard1" class="news_card">
           <h3>Fra bid til sammenbrud</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <p>
+            Et enkelt bid, og alt, du kender, begynder at falde fra hinanden.
+          </p>
           <img src="img/newspic1.jpeg" alt="news_img" />
           <button class="cta_btn" popovertarget="news_popover1">
             Læs mere
           </button>
         </article>
-        <article popover id="news_popover1">
-          <h2>
-            Fra bid til sammenbrud: Genkend de 5 stadier før det er for sent
-          </h2>
-          <h4>Trin 1: Øjeblikkelig Isolation (0–2 timer)</h3>
-          <p>
-            Adskil dig fra andre, så snart du mistænker kontakt. Monstre smitter
-            gennem væsker og nærkontakt. Lås døren, tæt ventiler med tape, og
-            sæt et synligt “KARANTÆNE”-skilt op. Tabt tid her øger risikoen.
-          </p>
-          <h4>Trin 2: Symptomovervågning (2–24 timer)</h3>
-          <p>
-            Typiske tegn optræder i rækkefølge: Feber over 39 °C inden for 4 timer. Lysende iris-glød i
-            svagt lys – tjek med telefonens lommelygte. Lokal lilla misfarvning
-            der spreder sig fra såret. Auditiv hallucination med lavfrekvent
-            brummen. Dokumentér hvert symptom med tidsstemplede fotos; data
-            hjælper triage-hold.
-          </p>
-          <h4></h4>
-        </article>
         <article id="" class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <h3>Når du ikke længere er alene</h3>
+          <h4>Fysisk afstand er altafgørende</h4>
           <img src="img/newspic2.jpeg" alt="news_img" />
-<button class="cta_btn" popovertarget="news_popover2">Læs mere</button>
-        </article>
-                <article popover id="news_popover2">
-          <h2>
-           ashdiuhasdguaosdipas
-          </h2>
-          <h4>Trin 1: Øjeblikkelig Isolation (0–2 timer)</h3>
-          <p>
-            Adskil dig fra andre, så snart du mistænker kontakt. Monstre smitter
-            gennem væsker og nærkontakt. Lås døren, tæt ventiler med tape, og
-            sæt et synligt “KARANTÆNE”-skilt op. Tabt tid her øger risikoen.
-          </p>
-          <h4>Trin 2: Symptomovervågning (2–24 timer)</h3>
-          <p>
-            Typiske tegn optræder i rækkefølge: Feber over 39 °C inden for 4 timer. Lysende iris-glød i
-            svagt lys – tjek med telefonens lommelygte. Lokal lilla misfarvning
-            der spreder sig fra såret. Auditiv hallucination med lavfrekvent
-            brummen. Dokumentér hvert symptom med tidsstemplede fotos; data
-            hjælper triage-hold.
-          </p>
-          <h4></h4>
+          <button class="cta_btn" popovertarget="news_popover2">
+            Læs mere
+          </button>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <h3>Symptomer over tid</h3>
+          <p>
+            Herunder kan du læse om hvordan symptomerne rammer dig indenfor de
+            første 48 timer
+          </p>
           <img src="img/newspic3.jpg" alt="news_img" />
-<button class="cta_btn" popovertarget="news_popover3">Læs mere</button>
-        </article>
-        <article popover id="news_popover3">
-          <h3>FUUUUCK</h3>
+          <button class="cta_btn" popovertarget="news_popover3">
+            Læs mere
+          </button>
         </article>
       </section>
     </main>
+    <article popover id="news_popover1">
+      <h2>Fra bid til sammenbrud: Genkend de 5 stadier før det er for sent</h2>
+      <h4>Infektionens begyndelse</h4>
+      <p>
+        Et bid fra en zombie eller inficeret skabning starter en kæde af
+        skræmmende forandringer i kroppen. Smitsomheden trænger hurtigt ind i
+        blodbanen og begynder at overtage kroppens normale funktioner. Hjerte,
+        hjerne og muskler påvirkes gradvist, hvilket fører til både fysisk og
+        mental nedbrydning.
+      </p>
 
+      <h4>Forvirring og tab af kontrol</h4>
+      <p>
+        Ofte starter det med forvirring og tab af selvkontrol, mens kroppen
+        langsomt reagerer på infektionen. Musklerne stivner, sanserne fordrejes,
+        og aggressionen vokser. Tiden mellem det første bid og den totale
+        overtagelse af kroppen er præget af smertefuld desperation, hvor
+        instinkter overtager fornuften.
+      </p>
+
+      <h4>Det uundgåelige sammenbrud</h4>
+      <p>
+        Til sidst mister kroppen fuldstændigt evnen til at opretholde normale
+        funktioner, og infektionen kulminerer i et uundgåeligt sammenbrud - en
+        transformation, der gør offeret til endnu en farlig del af apokalypsen.
+      </p>
+      <h4></h4>
+    </article>
+    <article popover id="news_popover2">
+      <h3>Når du ikke længere er alene</h3>
+
+      <h4>Fysisk afstand er altafgørende</h4>
+      <p>
+        I en verden hvor infektionen kan ramme hvem som helst, er det afgørende
+        at forstå, at nærhed kan være farlig. Selv når du møder andre
+        overlevende, skal fysisk kontakt undgås til enhver pris. Infektionen
+        udvikler sig forskelligt fra person til person, og selv dem, der ser
+        sunde ud, kan pludselig udvise ukontrolleret og aggressiv adfærd.
+      </p>
+
+      <h4>Sikre kommunikationsmetoder</h4>
+      <p>
+        For at minimere risikoen bør kontakt mellem smittede eller potentielt
+        smittede ske gennem sikre kanaler: visuelle signaler, radio eller
+        mobiltelefon. Aldrig direkte berøring. Selv små fejltrin kan føre til
+        katastrofale konsekvenser, og den eneste måde at beskytte sig selv og
+        andre på er ved at respektere grænserne for fysisk afstand.
+      </p>
+
+      <h4>Strategisk overlevelse</h4>
+      <p>
+        I situationer hvor du ikke længere er alene, bliver hver interaktion en
+        nøje balanceret strategi - ikke kun for overlevelse, men også for at
+        bevare din menneskelighed midt i kaosset.
+      </p>
+    </article>
+    <article popover id="news_popover3">
+      <h3>Typiske symptomer - time for time</h3>
+      <h4>0-12 timer efter kontakt</h4>
+      <p>De første, tidlige tegn på infektion.</p>
+      <ul>
+        <li>Varme eller prikken omkring kontaktstedet</li>
+        <li>Uforklarlig uro i kroppen</li>
+        <li>Let hovedpine</li>
+        <li>Forhøjet puls eller korte kulderystelser</li>
+      </ul>
+      <p><strong>Hold dig isoleret og kontakt beredskabet.</strong></p>
+      <br />
+      <h4>12-24 timer efter kontakt</h4>
+      <p>Infektionen begynder at påvirke kroppen mere mærkbart.</p>
+      <ul>
+        <li>Træthed og koncentrationsbesvær</li>
+        <li>Desorientering ved bevægelse</li>
+        <li>Øget kropsvarme</li>
+        <li>Uro i muskler eller små ryk</li>
+      </ul>
+      <p><strong>Undgå kontakt med andre - risikoen stiger.</strong></p>
+      <br />
+      <h4>24 - 36 timer efter kontakt</h4>
+      <p>Tegnene bliver tydelige for omgivelserne.</p>
+      <ul>
+        <li>Grålig eller lilla misfarvning i huden</li>
+        <li>Humørsvingninger og irritabilitet</li>
+        <li>Usikker gang og motoriske problemer</li>
+        <li>Aggression ved høje lyde eller berøring</li>
+      </ul>
+      <p><strong>Personen bør være i fuld isolation.</strong></p>
+      <br />
+      <h4>36 - 48 timer efter kontakt</h4>
+      <p>Den kritiske fase - kontroltab.</p>
+      <ul>
+        <li>Ukontrollerede bevægelser</li>
+        <li>Tom stirren og pludselige udbrud</li>
+        <li>Manglende genkendelse af mennesker</li>
+        <li>Målrettet aggression mod bevægelse eller lyd</li>
+      </ul>
+      <p>
+        <strong
+          >Efter 48 timer er transformationen næsten fuldstændig. Redningshold
+          skal tage over.</strong
+        >
+      </p>
+    </article>
     <footer>
       <nav class="some">
         <ul>
